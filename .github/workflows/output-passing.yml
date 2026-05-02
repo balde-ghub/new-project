@@ -15,5 +15,5 @@ jobs:
     generate-info:
         runs-on: ubuntu-latest
         steps:
-            -name: purpose
-            run: echo "Generating repository information"
+            - name: purpose
+              run: echo "Generating repository information"
