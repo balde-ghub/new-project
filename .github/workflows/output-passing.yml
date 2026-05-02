@@ -21,5 +21,8 @@ jobs:
               id: generate
               run: |
                 printenv
-                   #CURRENT_DATE=$(date +%c)
-                   #LATEST_COMMIT_ID=$(git rev-parse  --short=6 HEAD)
+                   CURRENT_DATE=$(date +%c)
+                   LATEST_COMMIT_ID=$(git rev-parse  --short=6 HEAD)
+                    #LATEST_COMMIT_SHA=${GITHUB_SHA::6}
+                     echo "$CURRENT_DATE"
+                     echo "$LATESt_COMMIT_ID"
